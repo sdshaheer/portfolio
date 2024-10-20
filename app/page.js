@@ -11,6 +11,7 @@ import Skills from "./components/homepage/skills";
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
 
+
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
@@ -22,8 +23,11 @@ async function getData() {
   return filtered;
 };
 
+
 export default async function Home() {
   const blogs = await getData();
+
+
 
   return (
     <>

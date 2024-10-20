@@ -1,49 +1,48 @@
-import ayla from '/public/image/ayla.jpg';
-import crefin from '/public/image/crefin.jpg';
 import realEstate from '/public/image/real-estate.jpg';
 import travel from '/public/image/travel.jpg';
+import chatApplication1 from '/public/image/chatApplication-1.png'
+import chatApplication2 from '/public/image/chatApplication-2.png'
+import chatApplication3 from '/public/image/chatApplication-3.png'
+import chatApplication4 from '/public/image/chatApplication-4.png'
+import chatApplication5 from '/public/image/chatApplication-5.png'
+import chatApplication6 from '/public/image/chatApplication-6.png'
+import chatApplication7 from '/public/image/chatApplication-7.png'
+import notion1 from '/public/image/notion-1.png'
+import notion2 from '/public/image/notion-2.png'
+
+
 
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
+        name: 'Chat Application',
+        description: 'The Chat Application is designed to provide users with a seamless, intuitive, and engaging interface for real-time communication. The application is fully responsive and utilizes WebSockets to ensure messages are delivered and displayed in real-time. Users receive instant notifications for new messages keeping them engaged without constant checking.',
+        tools: ['Express', 'Node JS', 'React', 'Redux', 'Websockets', 'MongoDB', 'Firebase', 'Tailwind CSS'],
         code: '',
-        demo: '',
-        image: crefin,
+        images: [chatApplication1, chatApplication2, chatApplication3, chatApplication4, chatApplication5, chatApplication6, chatApplication7],
+        isHosted: true,
+        hostedLink: 'https://sdshaheer-chat-application.vercel.app/'
     },
     {
         id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-        image: travel,
+        name: 'Notion',
+        description: 'This Notion-like clone is designed to allow users to manage tasks with a drag-and-drop interface, enhancing productivity. Users can create tasks and seamlessly move them between different lists, users can create any number of tasks according to their needs.',
+        tools: ['Express', 'Node JS', 'React', 'Redux', 'MongoDB', 'Firebase', 'Tailwind CSS'],
+        images: [notion1, notion2],
+        isHosted: true,
+        hostedLink: 'https://sdshaheer-notion.vercel.app/'
     },
     {
         id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-        image: realEstate,
+        name: 'HMS Application',
+        role: 'Freelancing',
+        description: 'I am contributing to Hospital Management System (HMS) which is a comprehensive web application designed to streamline hospital operations by enabling doctors to onboard patients, manage their profiles, and schedule appointments seamlessly. It features interactive dashboards for doctors and administrators, providing real-time insights into patient data, appointment schedules, and performance metrics. The system also supports PDF downloads, allowing users to generate reports such as patient histories and appointment summaries for efficient record-keeping and sharing. With its focus on improving operational efficiency and patient care, the HMS offers a user-friendly and secure platform for managing hospital workflows.',
+        tools: ['Express', 'Node JS', 'React', 'Redux', 'MongoDB', 'Tailwind CSS', 'cronJob', 'Material UI'],
+        images: [],
+        isHosted: false,
+        hostedLink: ''
     },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        image: ayla,
-        role: 'Full Stack Developer',
-    }
+
 ];
 
 
