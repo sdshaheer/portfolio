@@ -1,4 +1,3 @@
-// @flow strict
 'use client'
 import { useState } from 'react';
 
