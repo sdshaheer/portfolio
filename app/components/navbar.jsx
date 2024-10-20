@@ -3,11 +3,12 @@ import Link from "next/link";
 
 const navItems = [
   { href: "/#about", label: "ABOUT" },
+  { href: "/#education", label: "EDUCATION" },
   { href: "/#experience", label: "EXPERIENCE" },
   { href: "/#skills", label: "SKILLS" },
-  { href: "/#education", label: "EDUCATION" },
-  { href: "/blog", label: "BLOGS" },
   { href: "/#projects", label: "PROJECTS" },
+  { href: "/blog", label: "BLOGS" },
+
 ];
 
 function Navbar() {

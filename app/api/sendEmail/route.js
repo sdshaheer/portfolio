@@ -13,6 +13,7 @@ export async function POST(request) {
             pass: process.env.NEXT_PUBLIC_PASS_KEY,
         },
     });
+
     const mailOptions = {
         from: email,
         to: process.env.NEXT_PUBLIC_EMAIL_ID,

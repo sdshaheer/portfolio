@@ -4,14 +4,17 @@ import Blog from "./components/homepage/blog";
 import ContactSection from "./components/homepage/contact";
 import Education from "./components/homepage/education";
 import Experience from "./components/homepage/experience";
-import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
+import TopSection from "./components/homepage/top-section";
 
 async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
-
-
+  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`, {
+    method: 'GET',
+    headers: {
+      'Cache-Control': 'no-cache, no-store',
+    },
+  });
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
@@ -19,7 +22,7 @@ async function getData() {
   const data = await res.json();
 
   const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-
+  console.log('data', data.length)
   return filtered;
 };
 
@@ -31,12 +34,12 @@ export default async function Home() {
 
   return (
     <>
-      <HeroSection />
+      <TopSection />
       <AboutSection />
+      <Education />
       <Experience />
       <Skills />
       <Projects />
-      <Education />
       <Blog blogs={blogs} />
       <ContactSection />
     </>

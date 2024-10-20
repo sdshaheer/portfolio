@@ -18,14 +18,21 @@ function AboutSection() {
           <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
             Who I am?
           </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
-            {personalData.description}
-          </p>
+          <div className="flex flex-col gap-5">
+            {
+              personalData?.description?.map((description, index) => <p
+                key={`description-${index}`}
+                className="text-gray-200 text-sm lg:text-lg">
+                {description}
+              </p>)
+            }
+
+          </div>
         </div>
         <div className="flex justify-center order-1 lg:order-2">
           <Image
             src={personalData.profile}
-            width={280}
+            width={320}
             height={280}
             alt="Abu Said"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
