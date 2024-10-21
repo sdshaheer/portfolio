@@ -22,7 +22,7 @@ async function getData() {
 
   const data = await res.json();
 
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
+  const filtered = data.filter((item) => item?.cover_image).sort((a, b) => a.published_timestamp - b.published_timestamp);
   return filtered;
 };
 
