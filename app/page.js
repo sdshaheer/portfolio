@@ -9,12 +9,13 @@ import Skills from "./components/homepage/skills";
 import TopSection from "./components/homepage/top-section";
 
 async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`, {
+  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}&per_page=100`, {
     method: 'GET',
     headers: {
       'Cache-Control': 'no-cache, no-store',
     },
   });
+
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
@@ -35,10 +36,10 @@ export default async function Home() {
     <>
       <TopSection />
       <AboutSection />
-      <Education />
       <Experience />
       <Skills />
       <Projects />
+      <Education />
       <Blog blogs={blogs} />
       <ContactSection />
     </>

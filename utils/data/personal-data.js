@@ -5,7 +5,7 @@ export const personalData = {
   description: ['I’m Syed Shaheer, a passionate and dedicated programmer with a strong enthusiasm for continuous learning and self-improvement. I thrive on exploring new technologies and solving complex problems, with a deep love for all aspects of web application development. My core expertise lies in JavaScript, and I enjoy leveraging its power to create impactful solutions across the web.', 'I am always eager to contribute to meaningful projects and am open to new job opportunities that align with my skills and interests, helping to make the web more accessible and innovative.'],
   email: 'sdshaheer5421@gmail.com',
   phone: '+919550007935',
-  address: 'Guntur, AndhraPradesh, India',
+  address: 'AndhraPradesh, India',
   github: 'https://github.com/sdshaheer',
   linkedIn: 'https://www.linkedin.com/in/syed-shaheer-2b13411b4/',
   twitter: 'https://x.com/syedshaheer2001',
