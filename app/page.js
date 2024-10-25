@@ -9,7 +9,7 @@ import Skills from "./components/homepage/skills";
 import TopSection from "./components/homepage/top-section";
 
 async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}&per_page=100`, {
+  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}&per_page=6`, {
     method: 'GET',
     headers: {
       'Cache-Control': 'no-cache, no-store',
