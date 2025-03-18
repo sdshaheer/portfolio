@@ -70,7 +70,7 @@ function ProjectCard({ project }) {
         </div>
       </div>
       {
-        project.role !== 'Freelancing' && <div className='flex justify-center items-center p-2'>
+        project.hostedLink && <div className='flex justify-center items-center p-2'>
           <Link
             href={project.hostedLink}
             target='_blank'
